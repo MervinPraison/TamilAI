@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "TamilAI"
+version = "0.0.2"
+description = "An AI assistant that responds in Tamil"
+authors = ["Mervin Praison"]
+readme = "README.md"
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+openai = "^1.54.3"
+click = "^8.1.7"
+python-dotenv = "^1.0.1"
+
+[tool.poetry.scripts]
+tamilai = "tamilai.cli:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
